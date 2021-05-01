@@ -16,6 +16,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'URW';
+  font-size: 20px;
   -moz-osx-font-smoothing: auto;
 }
 
@@ -77,4 +78,47 @@ li a {
 
 .searchbar:focus {
   outline: 0;
+}
+
+/* Main area */
+
+.header {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.h1 {
+  font-family: 'URW-black';
+  font-size: 40px;
+  width: 330px;
+  margin-top: 50px;
+}
+
+.header__paragraph {
+  margin-top: 20px;
+}
+
+p {
+  line-height: 26px;
+  font-size: 20px;
+}
+
+.header__button {
+  margin-top: 40px;
+  display: flex;
+}
+
+.cta-button {
+  padding: 10px 30px;
+  background-color: #009a2f;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+.secondary {
+  color: #009a2f;
+  border: 0.3px solid #009a2f;
+  background-color: white;
+  margin-left: 20px;
 }
