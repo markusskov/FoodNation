@@ -4,8 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+    />
     <link rel="stylesheet" href="css/main.css" />
-    <title>FoodNadtion | Homepage</title>
+    <title>FoodNation | Homepage</title>
   </head>
   <body>
     <header>
@@ -16,7 +24,8 @@
         class="searchbar"
         type="text"
         name="search"
-        placeholder="What do you want for dinner?"
+        placeholder="&#xF002; What do you want for dinner?"
+        style="font-family: FontAwesome, Arial; font-style: normal"
       />
       <nav>
         <ul>
@@ -41,7 +50,51 @@
           <a class="cta-button" href="#">Random dish</a>
           <a class="cta-button secondary" href="#">Explore</a>
         </div>
+        <img src="/img/header_img.png" alt="Bowl of food" />
+      </section>
+      <section class="featured">
+        <div class="featured__container">
+          <h2 class="h2">Norwegian Inspired Recipes:</h2>
+          <div id="recipes__container"></div>
+          <h2 class="h2">Browse more</h2>
+        </div>
+        <div id="card-slider" class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="splide__slide__container">
+                  <img src="" />
+                </div>
+                <h4>Heading 01</h4>
+                <div>Description 01</div>
+              </li>
+              <li class="splide__slide">
+                <div class="splide__slide__container">
+                  <img src="image02.jpg" />
+                </div>
+                <h4>Heading 02</h4>
+                <div>Description 02</div>
+              </li>
+              <li class="splide__slide">
+                <div class="splide__slide__container">
+                  <img src="image02.jpg" />
+                </div>
+                <h4>Heading 02</h4>
+                <div>Description 02</div>
+              </li>
+              <li class="splide__slide">
+                <div class="splide__slide__container">
+                  <img src="image02.jpg" />
+                </div>
+                <h4>Heading 02</h4>
+                <div>Description 02</div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
     </main>
+    <script src="/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
   </body>
 </html>

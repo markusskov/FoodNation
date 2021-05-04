@@ -11,6 +11,11 @@
 
 @import url('https://use.typekit.net/vcd0crs.css');
 
+:root {
+  --main-color: #009a2f;
+  --background-color: rgba(23, 164, 65, 0.05);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -60,12 +65,12 @@ li a {
   text-decoration: none;
   color: black;
   margin-left: 75px;
-  font-family: 'URW-black';
+  font-family: 'URW';
   font-size: 20px;
 }
 
 .active {
-  color: #009a2f;
+  color: var(--main-color);
 }
 
 .searchbar {
@@ -80,17 +85,20 @@ li a {
   outline: 0;
 }
 
-/* Main area */
+/* Header Section */
 
 .header {
   max-width: 1200px;
   margin: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .h1 {
   font-family: 'URW-black';
   font-size: 40px;
-  width: 330px;
+  font-weight: 200;
+  width: 300px;
   margin-top: 50px;
 }
 
@@ -103,6 +111,8 @@ p {
   font-size: 20px;
 }
 
+/* Buttons */
+
 .header__button {
   margin-top: 40px;
   display: flex;
@@ -110,7 +120,7 @@ p {
 
 .cta-button {
   padding: 10px 30px;
-  background-color: #009a2f;
+  background-color: var(--main-color);
   border-radius: 5px;
   color: white;
   text-decoration: none;
@@ -118,7 +128,51 @@ p {
 
 .secondary {
   color: #009a2f;
-  border: 0.3px solid #009a2f;
+  border: 0.3px solid var(--main-color);
   background-color: white;
   margin-left: 20px;
+}
+
+/* Featured Section */
+
+.featured {
+  margin-top: 50px;
+  background-color: var(--background-color);
+  height: auto;
+}
+
+.featured__container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.h2 {
+  font-family: 'URW';
+  font-size: 30px;
+  font-weight: 100;
+  padding: 25px 0;
+}
+
+#recipes__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recipe__img {
+  width: 450px;
+  height: 300px;
+  border-radius: 5px;
+  background-position: center;
+  background-size: cover;
+}
+
+.recipe__desc {
+  width: 450px;
+  height: 59px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.splide__slide__container img {
+  width: 500px;
 }
