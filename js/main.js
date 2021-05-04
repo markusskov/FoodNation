@@ -25,7 +25,7 @@ getFeaturedImages();
 // Splide
 document.addEventListener('DOMContentLoaded', function () {
   new Splide('#card-slider', {
-    perPage: 3,
+    perPage: 2,
     breakpoints: {
       600: {
         perPage: 1,
