@@ -64,7 +64,7 @@ li {
 li a {
   text-decoration: none;
   color: black;
-  margin-left: 75px;
+  padding: 0 15px;
   font-family: 'URW';
   font-size: 20px;
 }
@@ -230,4 +230,46 @@ p {
   width: 280px;
   height: 180px;
   background: transparent;
+}
+
+/* Media Queries */
+
+@media (max-width: 991px) {
+  header {
+    justify-content: space-evenly;
+  }
+  .searchbar,
+  .searchbar::placeholder {
+    width: 300px;
+    font-size: 16px;
+  }
+  .h1 {
+    font-size: 30px;
+  }
+  .h1,
+  .header__paragraph {
+    text-align: center;
+  }
+  .header {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .searchbar {
+    display: none;
+  }
+  .logo {
+    font-size: 16px;
+    display: flex;
+    margin: auto;
+  }
+  .header__img img {
+    height: 200px;
+    width: auto;
+  }
+  li a {
+    display: none;
+  }
 }
