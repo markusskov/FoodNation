@@ -8,10 +8,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
-    />
     <link rel="stylesheet" href="css/main.css" />
     <title>FoodNation | Homepage</title>
   </head>
@@ -28,7 +24,7 @@
         style="font-family: FontAwesome, Arial; font-style: normal"
       />
       <nav>
-        <ul>
+        <ul class="nav__list">
           <li><a class="active" href="/index.html">Home</a></li>
           <li><a href="recipes.html">Recipes</a></li>
           <li><a href="about.html">About</a></li>
@@ -55,40 +51,38 @@
       <section class="featured">
         <div class="featured__container">
           <h2 class="h2">Latest recipes:</h2>
-          <div id="recipes__container"></div>
-        </div>
-        <div id="card-slider" class="splide">
-          <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide">
-                <div class="splide__slide__container">
-                  <img src="" />
-                </div>
-                <h4>Heading 01</h4>
-                <div>Description 01</div>
-              </li>
-              <li class="splide__slide">
-                <div class="splide__slide__container">
-                  <img src="image02.jpg" />
-                </div>
-                <h4>Heading 02</h4>
-                <div>Description 02</div>
-              </li>
-              <li class="splide__slide">
-                <div class="splide__slide__container">
-                  <img src="image02.jpg" />
-                </div>
-                <h4>Heading 03</h4>
-                <div>Description 03</div>
-              </li>
-              <li class="splide__slide">
-                <div class="splide__slide__container">
-                  <img src="image02.jpg" />
-                </div>
-                <h4>Heading 04</h4>
-                <div>Description 04</div>
-              </li>
-            </ul>
+
+          <div id="wrapper">
+            <div id="carousel">
+              <div id="content">
+                
+            </div>
+            <button id="prev">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path fill="none" d="M0 0h24v24H0V0z" />
+                <path
+                  d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z"
+                />
+              </svg>
+            </button>
+            <button id="next">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path fill="none" d="M0 0h24v24H0V0z" />
+                <path
+                  d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"
+                />
+              </svg>
+            </button>
           </div>
         </div>
         <div class="featured__container">
@@ -97,6 +91,5 @@
       </section>
     </main>
     <script src="/js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
   </body>
 </html>
