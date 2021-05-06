@@ -307,7 +307,4 @@ p {
   .card-text {
     font-size: 16px;
   }
-  #carousel::-webkit-scrollbar {
-    height: -10;
-  }
 }
