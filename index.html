@@ -43,13 +43,13 @@
             <p>Get a random recipe, or explore by country.</p>
           </div>
           <div class="header__button">
-          <a class="cta-button" href="#">Random dish</a>
-          <a class="cta-button secondary" href="#">Explore</a>
+            <a class="cta-button" href="#">Random dish</a>
+            <a class="cta-button secondary" href="#">Explore</a>
           </div>
         </div>
         <div class="header__img">
-            <img src="/img/header_img.png" alt="Bowl of food" />
-        </div>          
+          <img src="/img/header_img.png" alt="Bowl of food" />
+        </div>
       </section>
       <section class="featured">
         <div class="featured__container">
@@ -57,39 +57,94 @@
 
           <div id="wrapper">
             <div id="carousel">
-              <div id="content">
-                
+              <div id="content"></div>
+              <button id="prev">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path fill="none" d="M0 0h24v24H0V0z" />
+                  <path
+                    d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z"
+                  />
+                </svg>
+              </button>
+              <button id="next">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path fill="none" d="M0 0h24v24H0V0z" />
+                  <path
+                    d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"
+                  />
+                </svg>
+              </button>
             </div>
-            <button id="prev">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <path fill="none" d="M0 0h24v24H0V0z" />
-                <path
-                  d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z"
-                />
-              </svg>
-            </button>
-            <button id="next">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <path fill="none" d="M0 0h24v24H0V0z" />
-                <path
-                  d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"
-                />
-              </svg>
-            </button>
           </div>
         </div>
       </section>
     </main>
+    <footer>
+      <div class="footer__wrapper">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <h3 class="footer__header-logo">Foodnation</h3>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <h3 class="footer__header">About Us</h3>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Read our story</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Inspiration</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">FAQ</a>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <h3 class="footer__header">Recipes</h3>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Featured</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">By Country</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Get Inspired</a>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <h3 class="footer__header">Contact</h3>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Got a question?</a>
+          </li>
+        </ul>
+      </div>
+      <div class="bottom__footer">
+        <div class="bottom__text">
+          <p>Copyright 20201 @ FoodNation. All rights reserved.</p>
+        </div>
+        <div class="bottom__social">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </div>
+      </div>
+    </footer>
+
     <script src="/js/main.js"></script>
     <script src="/js/details.js"></script>
   </body>
