@@ -147,7 +147,7 @@ p {
 .featured {
   margin-top: 50px;
   background-color: var(--background-color);
-  height: auto;
+  height: 350px;
 }
 
 .featured__container {
@@ -160,26 +160,6 @@ p {
   font-size: 30px;
   font-weight: 100;
   padding: 25px 0;
-}
-
-#recipes__container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.recipe__img {
-  width: 450px;
-  height: 300px;
-  border-radius: 5px;
-  background-position: center;
-  background-size: cover;
-}
-
-.recipe__desc {
-  width: 450px;
-  height: 59px;
-  background-color: white;
-  border-radius: 5px;
 }
 
 /* Slider */
@@ -306,5 +286,18 @@ p {
   }
   .card-text {
     font-size: 16px;
+  }
+  .h2 {
+    padding: 20px 15px;
+  }
+  .featured {
+    height: 275px;
+  }
+  #wrapper {
+    width: 100%;
+    padding: 0 15px;
+  }
+  #carousel::-webkit-scrollbar {
+    display: none;
   }
 }
