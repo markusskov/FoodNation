@@ -166,7 +166,7 @@ p {
 
 #wrapper {
   width: 100%;
-  max-width: 964px;
+  max-width: 1200px;
   position: relative;
 }
 
@@ -319,8 +319,7 @@ p {
   li a {
     display: none;
   }
-  .h1 {
-  }
+
   .item {
     width: 150px;
     height: 100px;

@@ -1,49 +1,51 @@
-#wordpress-blog-post {
-  max-width: 1200px;
-  margin: auto;
-}
-
-.recipe-h1 {
-  text-align: center;
-  font-size: 42px;
-  margin-top: 20px;
-}
-
-.image {
+.recipes {
   display: flex;
-  margin: auto;
-  padding: 10px;
+  justify-content: center;
+  margin-top: 75px;
 }
 
-.has-text-align-center {
-  text-align: center;
+.h1__recipes {
+  font-family: 'URW-black';
+  font-size: 40px;
+  font-weight: 200;
+  width: 100%;
+  margin-top: 50px;
+  padding: 2rem 0;
 }
 
-.wp-block-group {
-  box-sizing: border-box;
-}
-
-.wp-block-columns {
+#recipes {
   display: flex;
-  margin-bottom: 1.75rem;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.wp-block-column {
-  flex-basis: 0;
-  flex-grow: 1;
-  margin-bottom: 1rem;
-  padding-right: 0;
-  padding-left: 0;
+.cards {
+  width: 300px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
-.wp-block-separator {
-  max-width: 10%;
-  margin: 0 auto 1.41575em;
-  overflow: hidden;
-  opacity: 0.4;
+.card {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0;
 }
 
-p {
-  line-height: 1.618;
+.recipe-img {
+  width: 250px;
+  height: 200px;
+}
+
+@media (max-width: 991px) {
+  .h1__recipes {
+    font-size: 30px;
+    width: 100%;
+    padding: 0 15px;
+  }
+  .h1__recipes,
+  .header__paragraph {
+    text-align: center;
+  }
 }
