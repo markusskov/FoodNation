@@ -13,6 +13,7 @@ async function getRecipes() {
     <div class="cards">
         <div class="card">
             <a href="details.html?id=${result[i].id}"><img class="recipe-img" src="${result[i]._embedded['wp:featuredmedia'][0].source_url}"/></a>
+            <div class="space></div>
             <a class="card-text" href="details.html?id=${result[i].id}">${result[i].title.rendered}</a>
         </div>
     </div>
