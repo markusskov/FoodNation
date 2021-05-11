@@ -16,11 +16,12 @@
 #recipes {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .cards {
-  width: 300px;
+  display: flex;
+  width: 270px;
   border-radius: 10px;
   justify-content: center;
   align-items: center;
@@ -56,5 +57,8 @@
 @media (max-width: 767px) {
   .h1__recipes {
     margin-top: 0;
+  }
+  #recipes {
+    justify-content: center;
   }
 }
