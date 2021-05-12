@@ -13,17 +13,19 @@
   display: flex;
   margin: auto;
   padding: 10px;
-  width: 80%;
+  width: 60%;
   object-fit: cover;
 }
 
-.has-text-align-center {
-  text-align: center;
+.has-text-align-left {
+  text-align: left;
   padding: 15px 0;
 }
 
 .wp-block-group {
   box-sizing: border-box;
+  max-width: 900px;
+  margin: auto;
 }
 
 .wp-block-columns {
@@ -63,7 +65,7 @@ li {
 }
 
 pre {
-  background: rgba(0, 0, 0, 0.1);
+  background: var(--background-color);
   justify-content: center;
   text-align: center;
   margin: 20px 0;
@@ -82,6 +84,10 @@ pre {
 @media (max-width: 991px) {
   .wp-block-columns p {
     margin: auto;
+    padding: 0 25px;
+  }
+  .has-text-align-left {
+    padding: 25px;
   }
   p {
     text-align: center;
