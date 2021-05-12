@@ -18,6 +18,7 @@
 
 .has-text-align-center {
   text-align: center;
+  padding: 15px 0;
 }
 
 .wp-block-group {
@@ -46,5 +47,52 @@
 }
 
 p {
+  max-width: 900px;
+  margin: auto;
   line-height: 1.618;
+}
+
+ol {
+  max-width: 900px;
+  margin: auto;
+}
+
+li {
+  margin: 10px 0;
+}
+
+pre {
+  background: rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  text-align: center;
+  margin: 20px 0;
+  padding: 1.618em;
+  max-width: 900px;
+  font-size: 1em;
+}
+
+.wp-block-verse {
+  white-space: pre-wrap;
+  overflow: auto;
+  margin: 40px auto;
+  display: flex;
+}
+
+@media (max-width: 991px) {
+  .wp-block-columns p,
+  ol {
+    font-size: 16px;
+    padding: 0 25px;
+    margin: auto;
+  }
+  p {
+    text-align: center;
+  }
+  li {
+    font-size: 16px;
+  }
+  .recipe-h1 {
+    font-size: 25px;
+    padding: 15px 0;
+  }
 }

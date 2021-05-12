@@ -1,7 +1,7 @@
 const url = 'https://api.markusskov.tech/wp-json/wp/v2/posts?_embed';
 
 // Random Post
-// I get that this is not a dynamic way of getting posts, but I could not find a way to fetch
+// I get that this is not a dynamic way of getting the ID's of posts, but I could not find a way to fetch
 // ID's randomly and implement it in the button.
 const buttons = document.getElementById('header__button');
 const idOfPages = [42, 39, 34, 28];
@@ -31,7 +31,6 @@ async function getFeaturedImages() {
 getFeaturedImages();
 
 // Slider
-
 const gap = 16;
 
 const carousel = document.getElementById('carousel'),

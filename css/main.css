@@ -300,7 +300,7 @@ p {
     flex-direction: column-reverse;
     align-items: center;
   }
-  .header__button {
+  #header__button {
     justify-content: center;
   }
   #prev,
@@ -325,7 +325,7 @@ p {
     height: 150px;
     width: auto;
   }
-  li a {
+  .list__item {
     display: none;
   }
 
