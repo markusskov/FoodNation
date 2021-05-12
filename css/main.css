@@ -221,6 +221,7 @@ p {
   width: 280px;
   height: 180px;
   background: transparent;
+  object-fit: cover;
 }
 
 .card-text {
