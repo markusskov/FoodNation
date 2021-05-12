@@ -123,7 +123,7 @@ p {
 
 /* Buttons */
 
-.header__button {
+#header__button {
   margin-top: 40px;
   display: flex;
 }
