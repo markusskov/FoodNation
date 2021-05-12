@@ -1,6 +1,12 @@
 const url = 'https://api.markusskov.tech/wp-json/wp/v2/posts?_embed';
 
+// Random Post
+// I get that this is not a dynamic way of getting posts, but I could not find a way to fetch
+// ID's randomly and implement it in the button.
 const randomPostButton = document.querySelector('.cta-button');
+const idOfPages = [42, 39, 34, 28];
+const randomNumber = idOfPages[Math.floor(Math.random() * idOfPages.length)];
+randomPostButton.innerHTML = `<a class="cta-button" href="details.html?id=${randomNumber}">Random Dish</a>`;
 
 // Fetch Images and post links
 async function getFeaturedImages() {
@@ -16,12 +22,6 @@ async function getFeaturedImages() {
       <a class="card-text" href="details.html?id=${result[i].id}">${result[i].title.rendered}</a>
       <div>
       `;
-
-      // Getting random id's endpoint when you click Random Dish button
-      idOfPages = [result[i].id];
-      const randomId = idOfPages[Math.floor(Math.random() * idOfPages.length)];
-      console.log(randomId);
-      randomPostButton.innerHTML = `<a class="cta-button" href="details.html?id=${randomId}">Random Dish</a>`;
     }
   } catch (error) {
     console.log(error);
