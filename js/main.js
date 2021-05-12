@@ -1,8 +1,8 @@
 const url = 'https://api.markusskov.tech/wp-json/wp/v2/posts?_embed';
 
-// Link for Images
-// ${result[i]._embedded['wp:featuredmedia'][0].source_url}
+const randomPostButton = document.querySelector('.cta-button');
 
+// Fetch Images and post links
 async function getFeaturedImages() {
   try {
     const response = await fetch(url);
@@ -16,6 +16,12 @@ async function getFeaturedImages() {
       <a class="card-text" href="details.html?id=${result[i].id}">${result[i].title.rendered}</a>
       <div>
       `;
+
+      // Getting random id's endpoint when you click Random Dish button
+      idOfPages = [result[i].id];
+      const randomId = idOfPages[Math.floor(Math.random() * idOfPages.length)];
+      console.log(randomId);
+      randomPostButton.innerHTML = `<a class="cta-button" href="details.html?id=${randomId}">Random Dish</a>`;
     }
   } catch (error) {
     console.log(error);
