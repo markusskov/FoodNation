@@ -1,0 +1,41 @@
+.h1__about {
+  font-family: 'URW-black';
+  font-size: 40px;
+  font-weight: 200;
+  width: 70%;
+  margin-top: 50px;
+}
+
+.about__copy {
+  width: 70%;
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+.about__img img {
+  width: 400px;
+  height: 600px;
+  object-fit: contain;
+}
+
+.about__subheader {
+  width: 70%;
+  text-align: left;
+}
+
+@media (max-width: 991px) {
+  .about__copy,
+  .about__subheader,
+  .h1__about {
+    margin: auto;
+  }
+  .about__img img {
+    height: 500px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about__img img {
+    height: 300px;
+  }
+}
