@@ -247,6 +247,10 @@ p {
   font-size: 20px;
 }
 
+.footer__item {
+  margin: 0;
+}
+
 .footer__link {
   padding: 0;
   line-height: 1.5rem;
