@@ -17,6 +17,7 @@
       <div class="logo">
         <a href="/index.html">Food<span>Nation</span></a>
       </div>
+      <i class="fa fa-bars" id="hamburger" aria-hidden="true"></i>
       <input
         class="searchbar"
         type="text"
@@ -39,6 +40,17 @@
         </ul>
       </nav>
     </header>
+    <!-- Mobile Header -->
+    <div class="mobile__container">
+      <ul class="mobile__list">
+        <li class="mobile__item">
+          <a href="/index.html" class="mobile__ref">Home</a>
+          <a href="/recipes.html" class="mobile__ref">Recipes</a>
+          <a href="/about.html" class="mobile__ref">About</a>
+          <a href="/contact.html" class="mobile__ref">Contact</a>
+        </li>
+      </ul>
+    </div>
     <main>
       <section class="header">
         <div class="header__container">
@@ -89,9 +101,6 @@
               diam. Donec at justo ante. Interdum et malesuada fames ac ante
               ipsum primis in faucibus.
             </p>
-          </div>
-          <div id="header__button">
-            <!-- Button classes in JS file -->
           </div>
         </div>
         <div class="about__img">
@@ -157,5 +166,6 @@
         </div>
       </div>
     </footer>
+    <script src="/js/navigation.js"></script>
   </body>
 </html>
