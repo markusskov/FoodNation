@@ -64,8 +64,8 @@ textarea {
 @media (max-width: 991px) {
   .h1__contact {
     text-align: center;
-    margin-top: 0;
     font-size: 30px;
+    padding-bottom: 15px;
   }
 
   input[type='text'],
@@ -75,11 +75,16 @@ textarea {
     width: 100%;
     justify-content: center;
   }
-
   .divider,
   #facebook,
   #twitter,
   #instagram {
     margin: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .h1__contact {
+    margin-top: 0;
   }
 }
