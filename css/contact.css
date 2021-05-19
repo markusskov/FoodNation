@@ -1,0 +1,76 @@
+.h1__contact {
+  font-family: 'URW-black';
+  font-size: 40px;
+  font-weight: 200;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.divider {
+  width: 80%;
+  height: 2px;
+  background-color: var(--background-color);
+  margin-top: 15px;
+}
+
+.about__social {
+  display: flex;
+  padding: 35px 0;
+}
+
+#facebook,
+#twitter,
+#instagram {
+  color: var(--main-color);
+  font-size: 30px;
+}
+
+/* Contact form */
+.contactForm {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.form-error {
+  color: red;
+  display: none;
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+  padding: 0.5rem;
+  margin: 5px 0;
+  width: 50%;
+}
+
+.formSubmit {
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  background-color: var(--main-color);
+  margin-top: 0.1rem;
+  display: flex;
+}
+
+@media (max-width: 991px) {
+  .h1__contact {
+    text-align: center;
+  }
+
+  input[type='text'],
+  input[type='email'],
+  textarea,
+  .formSubmit {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .divider,
+  #facebook,
+  #twitter,
+  #instagram {
+    margin: auto;
+  }
+}
