@@ -64,6 +64,8 @@ textarea {
 @media (max-width: 991px) {
   .h1__contact {
     text-align: center;
+    margin-top: 0;
+    font-size: 30px;
   }
 
   input[type='text'],
