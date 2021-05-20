@@ -36,7 +36,7 @@ loadMoreButton.addEventListener('click', function (e) {
       cards[i].style.display = 'block';
     }
   }
-  currentItems += 4;
+  currentItems += 15;
   if (currentItems >= cards.length) {
     event.target.style.display = 'none';
   }
