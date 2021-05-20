@@ -1,4 +1,5 @@
-const url = 'https://api.markusskov.tech/wp-json/wp/v2/posts?_embed';
+const url =
+  'https://api.markusskov.tech/wp-json/wp/v2/posts?per_page=100&_embed';
 
 // Random Post
 // I get that this is not a dynamic way of getting the ID's of posts, but I could not find a way to fetch

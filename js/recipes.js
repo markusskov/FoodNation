@@ -1,4 +1,5 @@
-const url = 'https://api.markusskov.tech/wp-json/wp/v2/posts?_embed';
+const url =
+  'https://api.markusskov.tech/wp-json/wp/v2/posts?per_page=20&_embed';
 
 const container = document.getElementById('recipes');
 
