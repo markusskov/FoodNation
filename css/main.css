@@ -88,7 +88,7 @@ main {
   color: var(--main-color);
 }
 
-.searchbar {
+#searchbar {
   width: 500px;
   padding: 0.5rem;
   border-radius: 5px;
@@ -96,7 +96,7 @@ main {
   border-width: 1px;
 }
 
-.searchbar:focus {
+#searchbar:focus {
   outline: 0;
 }
 
