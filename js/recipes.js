@@ -25,3 +25,19 @@ async function getRecipes() {
   }
 }
 getRecipes();
+
+// Load More Button
+const loadMoreButton = document.getElementById('loadMore');
+let currentItems = 10;
+loadMoreButton.addEventListener('click', function (e) {
+  const cards = [...document.querySelectorAll('.cards')];
+  for (let i = currentItems; i < currentItems + 10; i++) {
+    if (cards[i]) {
+      cards[i].style.display = 'block';
+    }
+  }
+  currentItems += 4;
+  if (currentItems >= cards.length) {
+    event.target.style.display = 'none';
+  }
+});
