@@ -12,7 +12,7 @@
 @import url('https://use.typekit.net/vcd0crs.css');
 
 :root {
-  --main-color: #009a2f;
+  --main-color: #016711;
   --background-color: rgba(23, 164, 65, 0.05);
 }
 
@@ -64,7 +64,7 @@ main {
 }
 
 .logo a span {
-  color: #009a2f;
+  color: var(--main-color);
 }
 
 .nav__list {
@@ -144,7 +144,7 @@ p {
 }
 
 .secondary {
-  color: #009a2f;
+  color: var(--main-color);
   border: 0.3px solid var(--main-color);
   background-color: white;
   margin-left: 20px;
