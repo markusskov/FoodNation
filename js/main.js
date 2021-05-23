@@ -5,7 +5,9 @@ const url =
 // I get that this is not a dynamic way of getting the ID's of posts, but I could not find a way to fetch
 // ID's randomly and implement it in the button.
 const buttons = document.getElementById('header__button');
-const idOfPages = [78, 75, 61, 42, 39, 34, 28];
+const idOfPages = [
+  108, 105, 99, 95, 92, 89, 85, 82, 78, 75, 61, 42, 39, 34, 28,
+];
 const randomNumber = idOfPages[Math.floor(Math.random() * idOfPages.length)];
 buttons.innerHTML = `<a class="cta-button" href="details.html?id=${randomNumber}">Random Dish</a>
 <a class="cta-button secondary" href="/recipes.html">Explore</a>`;
