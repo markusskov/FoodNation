@@ -10,23 +10,23 @@
     />
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/recipes.css" />
-        <!-- Hotjar Tracking Code for https://foodnation.netlify.app/ -->
-        <script>
-          (function (h, o, t, j, a, r) {
-            h.hj =
-              h.hj ||
-              function () {
-                (h.hj.q = h.hj.q || []).push(arguments);
-              };
-            h._hjSettings = { hjid: 2414166, hjsv: 6 };
-            a = o.getElementsByTagName('head')[0];
-            r = o.createElement('script');
-            r.async = 1;
-            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-            a.appendChild(r);
-          })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-        </script>
-        <!-- End of script -->
+    <!-- Hotjar Tracking Code for https://foodnation.netlify.app/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2414166, hjsv: 6 };
+        a = o.getElementsByTagName('head')[0];
+        r = o.createElement('script');
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+    <!-- End of script -->
     <title>FoodNation | Recipes</title>
     <meta
       name="description"
@@ -50,31 +50,33 @@
       <nav>
         <ul class="nav__list">
           <li class="list__item">
-            <a  href="/index.html">Home</a>
+            <a href="/index.html">Home</a>
           </li>
-          <li class="list__item"><a class="active" href="recipes.html">Recipes</a></li>
+          <li class="list__item">
+            <a class="active" href="recipes.html">Recipes</a>
+          </li>
           <li class="list__item"><a href="about.html">About</a></li>
           <li class="list__item"><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
-       <!-- Mobile Header -->
-       <div class="mobile__container">
-        <ul class="mobile__list">
-          <div class="mobile__item-background">
-            <a href="/index.html" class="mobile__ref">Home</a>
-          </div>
-          <div class="mobile__item-background">
-            <a href="/recipes.html" class="mobile__ref">Recipes</a>
-          </div>
-          <div class="mobile__item-background">
-            <a href="/about.html" class="mobile__ref">About</a>
-          </div>
-          <div class="mobile__item-background">
-            <a href="/contact.html" class="mobile__ref">Contact</a>
-          </div>
-        </ul>
-      </div>
+    <!-- Mobile Header -->
+    <div class="mobile__container">
+      <ul class="mobile__list">
+        <div class="mobile__item-background">
+          <a href="/index.html" class="mobile__ref">Home</a>
+        </div>
+        <div class="mobile__item-background">
+          <a href="/recipes.html" class="mobile__ref">Recipes</a>
+        </div>
+        <div class="mobile__item-background">
+          <a href="/about.html" class="mobile__ref">About</a>
+        </div>
+        <div class="mobile__item-background">
+          <a href="/contact.html" class="mobile__ref">Contact</a>
+        </div>
+      </ul>
+    </div>
     <main>
       <section class="header">
         <div class="header__container">
@@ -83,8 +85,7 @@
           </div>
           <div id="recipes"></div>
           <div class="button__container">
-          <button class="loadMore" id="loadMore">Load More</button>
-        </div>
+            <button class="loadMore" id="loadMore">Load More</button>
           </div>
         </div>
       </section>
@@ -126,9 +127,15 @@
           <p>Copyright 2021 @ FoodNation. All rights reserved.</p>
         </div>
         <div class="bottom__social">
-          <i class="fa fa-facebook" aria-hidden="true"></i>
-          <i class="fa fa-twitter" aria-hidden="true"></i>
-          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <a href="https://facebook.com" target="_blank"
+            ><i class="fa fa-facebook" aria-hidden="true"></i
+          ></a>
+          <a href="http://twitter.com" target="_blank"
+            ><i class="fa fa-twitter" aria-hidden="true"></i
+          ></a>
+          <a href="http://instagram.com" target="_blank"
+            ><i class="fa fa-instagram" aria-hidden="true"></i
+          ></a>
         </div>
       </div>
     </footer>
