@@ -100,6 +100,24 @@ main {
   outline: 0;
 }
 
+#searchresults {
+  position: absolute;
+  width: 100%;
+  top: 100px;
+}
+
+.search__result {
+  border: solid white 1px;
+  padding: 15px;
+  background-color: var(--main-color);
+  color: white;
+}
+
+.search__text {
+  text-decoration: none;
+  color: white;
+}
+
 /* Header Section */
 
 .header {
