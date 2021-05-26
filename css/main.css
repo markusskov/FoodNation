@@ -320,9 +320,9 @@ p {
   header {
     justify-content: space-evenly;
   }
-  .searchbar,
+  #searchbar,
   .searchbar::placeholder {
-    width: 300px;
+    width: 200px;
     font-size: 16px;
   }
   .h1 {
