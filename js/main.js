@@ -22,7 +22,7 @@ async function getFeaturedImages() {
     for (let i = 0; i < result.length; i++) {
       content.innerHTML += `
       <div class="item__card">
-      <a  href="details.html?id=${result[i].id}"><img class="item" src="${result[i]._embedded['wp:featuredmedia'][0].source_url}"/></a>
+      <a href="details.html?id=${result[i].id}"><img class="item" src="${result[i]._embedded['wp:featuredmedia'][0].source_url}"/></a>
       <a class="card-text" href="details.html?id=${result[i].id}">${result[i].title.rendered}</a>
       <div>
       `;
