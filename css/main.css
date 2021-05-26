@@ -94,6 +94,7 @@ main {
   border-radius: 5px;
   border-style: solid;
   border-width: 1px;
+  position: relative;
 }
 
 #searchbar:focus {
@@ -103,7 +104,7 @@ main {
 #searchresults {
   position: absolute;
   width: 100%;
-  top: 100px;
+  top: 105px;
 }
 
 .search__result {
@@ -111,11 +112,19 @@ main {
   padding: 15px;
   background-color: var(--main-color);
   color: white;
+  width: 100%;
+  margin: auto;
+  max-width: 1200px;
 }
 
 .search__text {
   text-decoration: none;
   color: white;
+}
+
+.search__text h4 {
+  max-width: 1200px;
+  padding: 0 15px;
 }
 
 /* Header Section */
