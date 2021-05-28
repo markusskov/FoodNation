@@ -37,6 +37,12 @@
   display: none;
 }
 
+.form-success {
+  padding: 20px 0;
+  display: none;
+  color: black;
+}
+
 input[type='text'],
 input[type='email'],
 textarea {

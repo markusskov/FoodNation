@@ -7,8 +7,9 @@ const subject = document.querySelector('#subject');
 const subjectError = document.querySelector('#subjectError');
 const message = document.querySelector('#message');
 const messageError = document.querySelector('#messageError');
+const success = document.querySelector('#success');
 
-function validateForm() {
+function validateForm(event) {
   event.preventDefault();
 
   if (checkLength(firstName.value, 5) === true) {
@@ -42,6 +43,7 @@ form.addEventListener('submit', validateForm);
 
 function checkLength(value, length) {
   if (value.trim().length > length) {
+    success.style.display = 'block';
     return true;
   } else {
     return false;
