@@ -11,7 +11,7 @@ async function getRecipes() {
     console.log(result);
     for (let i = 0; i < result.length; i++) {
       container.innerHTML += `
-    <div class="cards">
+    <div class="cards ${result[i]._embedded['wp:term'][0][0].slug}" >
         <div class="card">
             <a href="details.html?id=${result[i].id}"><img class="recipe-img" src="${result[i]._embedded['wp:featuredmedia'][0].source_url}"/></a>
             <div class="space></div>

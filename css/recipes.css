@@ -14,6 +14,11 @@
   padding-bottom: 1rem;
 }
 
+.paragraph__text {
+  margin: 0;
+  padding: 15px 0;
+}
+
 #recipes {
   display: flex;
   flex-wrap: wrap;
