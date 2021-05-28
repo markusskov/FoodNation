@@ -67,6 +67,8 @@ textarea {
   border-radius: 5px;
 }
 
+/* ---- Media Queries Pad ---- */
+
 @media (max-width: 991px) {
   .h1__contact {
     text-align: center;
@@ -88,6 +90,8 @@ textarea {
     margin: auto;
   }
 }
+
+/* ---- Media Queries Mobile ---- */
 
 @media (max-width: 767px) {
   .h1__contact {

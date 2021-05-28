@@ -1,0 +1,26 @@
+/* General Settings */
+@font-face {
+  font-family: URW;
+  src: url(/fonts/URWGeometric-Regular.woff);
+}
+
+@font-face {
+  font-family: URW-Black;
+  src: url(/fonts/URWGeometric-Black.woff);
+}
+
+@import url('https://use.typekit.net/vcd0crs.css');
+
+:root {
+  --main-color: #016711;
+  --background-color: rgba(23, 164, 65, 0.05);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'URW';
+  font-size: 20px;
+  -moz-osx-font-smoothing: auto;
+}

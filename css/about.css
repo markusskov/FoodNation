@@ -18,6 +18,7 @@
   padding-bottom: 20px;
   text-align: left;
   line-height: 1.2;
+  margin: 0;
 }
 
 .about__img img {
@@ -30,6 +31,8 @@
   width: 80%;
   text-align: left;
 }
+
+/* ---- Media Queries Pad ---- */
 
 @media (max-width: 991px) {
   .about__copy,
@@ -48,6 +51,8 @@
     width: 300px;
   }
 }
+
+/* ---- Media Queries Mobile ---- */
 
 @media (max-width: 767px) {
   .about__img img {

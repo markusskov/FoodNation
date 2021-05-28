@@ -1,3 +1,4 @@
+/*  Recipes Section */
 .recipes {
   display: flex;
   justify-content: center;
@@ -60,6 +61,8 @@
   cursor: pointer;
 }
 
+/* ---- Media Queries Pad ---- */
+
 @media (max-width: 991px) {
   .h1__recipes {
     font-size: 30px;
@@ -79,6 +82,8 @@
     width: 100%;
   }
 }
+
+/* ---- Media Queries Mobile ---- */
 
 @media (max-width: 767px) {
   .h1__recipes {
