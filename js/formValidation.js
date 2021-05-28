@@ -46,6 +46,7 @@ function checkLength(value, length) {
     success.style.display = 'block';
     return true;
   } else {
+    success.style.display = 'none';
     return false;
   }
 }
