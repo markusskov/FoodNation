@@ -38,6 +38,6 @@ loadMoreButton.addEventListener('click', function (e) {
   }
   currentItems += 15;
   if (currentItems >= cards.length) {
-    event.target.style.display = 'none';
+    e.target.style.display = 'none';
   }
 });
